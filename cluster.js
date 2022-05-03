@@ -16,7 +16,7 @@ manager.on("clusterCreate", cluster => {
     console.log(`[SHARDING-MANAGER]: `.magenta + `Launched Cluster #${cluster.id} | ${cluster.id+1}/${cluster.manager.totalClusters} [${cluster.manager.shardsPerClusters}/${cluster.manager.totalShards} Shards]`.green)
 
     cluster.on("death", function () {
-        console.log(`${colors.red.bold(`Cluster ${cluster.id} died..`)}`);
+        console.log(`${colors.red.bold(`Cluster ${cluster.id} died.. :D`)}`);
     });
 
     cluster.on("message", async (msg) => {
